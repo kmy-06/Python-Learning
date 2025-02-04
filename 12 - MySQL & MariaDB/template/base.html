@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Using Jinja2's markup templates extentions to HTML -->
+
+  <head>
+
+<!-- Substitution: Double curly braces surround Jinja2 expression, the use of curly braces indicate 'f-strings' -->
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/webapp.css"/>
+
+  </head>
+
+  <body>
+
+    <h2>{{title}}</h2>
+
+<!-- Inheritance: The delimiters surround Jinja2 statement -->
+    {% block body %}
+    {% endblock %}
+
+  </body>
+  
+</html>  
